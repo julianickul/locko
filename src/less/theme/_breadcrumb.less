@@ -1,0 +1,16 @@
+.breadcrumb {
+	background: none;
+	font-size: 11px;
+	line-height: 20px;
+	padding: 0;
+	li {
+		zoom:1;
+		display: inline;
+	}
+	> li + li::before {
+		color: #606060;
+		content: "› ";
+		padding: 0 5px;
+		font-size: 15px;
+	}
+}

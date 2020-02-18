@@ -1,0 +1,86 @@
+//- includes/header.jade
+header.header#header
+
+	.container
+		.row
+			.col-md-3.col-sm-4.col-xs-6
+				.logo
+					a(href='../index.html')
+						//img(src='images/logo.svg', width='250', height='70')
+			.col-md-2.hidden-sm.hidden-xs
+				.set-city
+					.dropdown
+						button.btn.btn-default.dropdown-toggle#dropdownCity(type="button", data-toggle="dropdown", aria-expanded="true")
+							|Санкт-Петербург
+							span.caret
+						ul.dropdown-menu(role="menu", aria-labelledby="dropdownCity")
+							li(role="presentation")
+								a(role="menuitem", tabindex="-1", href="#") Санкт-Петербург
+							li(role="presentation")
+								a(role="menuitem", tabindex="-1", href="#") Москва
+			.col-md-3.col-sm-3.col-xs-6
+				.call-us
+					ul
+						li.call-us__phone
+							a(href='tel:+78002505050') 8 800 250 50 50
+						li.call-us__back
+							a(href='') Обратный звонок
+			.clearfix.visible-xs
+			.col-md-2.col-sm-3.col-xs-6
+				.bank-contacts
+					ul
+						li
+							a(href='') Отделения и банкоматы
+						li
+							a(href='') О банке
+			.col-md-2.col-sm-2.col-xs-6
+				.search.hidden-sm.hidden-xs
+					a(href="#")
+						span.icon-search
+				.set-city.hidden-lg.visible-sm.visible-xs
+					.dropdown
+						button.btn.btn-default.dropdown-toggle#dropdownCity2(type="button", data-toggle="dropdown", aria-expanded="true")
+							|Санкт-Петербург
+							span.caret
+						ul.dropdown-menu.dropdown-menu-right(role="menu", aria-labelledby="dropdownCity")
+							li(role="presentation")
+								a(role="menuitem", tabindex="-1", href="#") Санкт-Петербург
+							li(role="presentation")
+								a(role="menuitem", tabindex="-1", href="#") Москва
+				.set-lang 
+					.dropdown
+						button.btn.btn-default.dropdown-toggle#dropdownLang(type="button", data-toggle="dropdown", aria-expanded="true")
+							|Рус
+							span.caret
+						ul.dropdown-menu.dropdown-menu-right(role="menu", aria-labelledby="dropdownLang")
+							li(role="presentation")
+								a(role="menuitem", tabindex="-1", href="#") Рус
+							li(role="presentation")
+								a(role="menuitem", tabindex="-1", href="#") Eng
+	.container.containter-type-navbar
+		nav.navbar.navbar-default.navbar-products(role='navigation')
+			.navbar-header
+				a.navbar-toggle.collapsed(href="#navbar-products-list", data-toggle="collapse",aria-expanded="false", aria-controls="collapseExample")
+					| Продукты и услуги
+				.search.visible-sm.visible-xsx
+					a(href="#")
+						span.icon-search
+						//img(src='images/search.svg', width='14', height='14')
+						//.ico.ico-type-search
+				a.navbar-ibank(href="#")
+					.ico.ico-type-ibank
+					.icon-key
+					span Интернет-банк
+
+
+			block main_navigation
+			.collapse.navbar-collapse#navbar-products-list
+				ul.nav.navbar-nav
+					li
+						a Частным лицам
+					li
+						a Малому и среднему бизнесу
+					li
+						a Корпоративным клиентам
+					li
+						a Private Banking

@@ -1,0 +1,78 @@
+//- news_detail.jade
+extends ./templates/layout.jade
+block page-title
+	title Новости - Презентация новых кредитных продуктов Locko Premium в Москве
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-8
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li
+							a(href="#") Новости
+						li.active Страница новости
+
+					article
+						h1 Презентация новых кредитных продуктов Locko Premium в Москве
+
+						p Локо-Банк объявляет о запуске новой услуги <strong>«Узнай кредитную историю»</strong>, которая позволяет по запросу получить кредитную историю физического лица из Национального бюро кредитных историй.
+						p <strong>Кредитная история</strong> — это информация, характеризующая исполнение заемщиком принятых на себя обязательств по договорам кредита/займа, такая как сроки и даты ранее оформленных кредитов, их погашение, просрочки, а также текущая задолженность заемщика.
+						p Регулярный контроль заемщиком собственной кредитной истории позволяет не только оценивать текущую <strong>кредитную нагрузку</strong> и получить <strong>преимущество</strong> при получении кредита, но, кроме того, предотвратить факты мошенничества и контролировать правильность информации по кредитной истории заемщика.
+						p
+							img.img-responsive(src='./images/temp/news_01.jpg')
+
+
+						p Услуга доступна для физических лиц-граждан России в отделениях Локо-Банка в Москве, Санкт-Петербурге, Нижнем Новгороде, а также в Ярославле, и предоставляется при наличии паспорта на основании заполненного заявления.
+						p Более <strong>подробную информацию</strong> о новой услуге можно найти на соответствующей странице на сайте Локо-Банка.
+
+						p.embed-responsive.embed-responsive-16by9
+							iframe.embed-responsive-item(src="https://www.youtube.com/embed/NF6bah_RVSs", frameborder="0")
+
+						.share-info <span>Понравилось?</span> <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#send-popup" href="">Рассказать друзьям</a>
+
+
+
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.sidebar-block.sidebar-promo
+						a(href='')
+							img.img-responsive(src='./images/temp/sidebar_promo1.png', alt='До 12% годовых')
+
+					.sidebar-block.sidebar-news
+						.sidebar-title
+							h2 Все новости
+						ul.list-news
+							li.list-news_item
+								.news-title
+									a(href='') Агентство по страхованию вкладов аккредитовало  Локо-Банк!
+								.news-date 17 декабря 2014
+							li.list-news_item
+								.news-title
+									a(href='') Локо-Банк стал лидером августа по приросту депозитов среди банков ТОП-100 по объему ...
+								.news-date 16 декабря 2014
+							li.list-news_item
+								.news-title
+									a(href='') Ирина Григорьева вошла в состав Правления Локо-Банка
+								.news-date 15 декабря 2014
+							li.list-news_item
+								.news-title
+									a(href='') Локо-Банк стал лидером августа по приросту депозитов среди банков ТОП-100 по объему...
+								.news-date 15 декабря 2014
+							li.list-news_item
+								.news-title
+									a(href='') Агентство по страхованию вкладов аккредитовало  Локо-Банк!
+								.news-date 17 декабря 2014
+							li.list-news_item
+								.news-title
+									a(href='') Локо-Банк стал лидером августа по приросту депозитов среди банков ТОП-100 по объему ...
+								.news-date 16 декабря 2014
+							li.list-news_item
+								.news-title
+									a(href='') Ирина Григорьева вошла в состав Правления Локо-Банка
+								.news-date 15 декабря 2014
+							li.list-news_item
+								.news-title
+									a(href='') Локо-Банк стал лидером августа по приросту депозитов среди банков ТОП-100 по объему...
+								.news-date 15 декабря 2014
+

@@ -1,0 +1,84 @@
+//- index.jade
+extends ./templates/layout.jade
+block page-title
+	title Учредители
+
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-8
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О банке
+						li.active Учредители
+
+					article
+						h1 Учредители
+						.founder-group
+							h3 Совет директоров
+							ul
+								li
+									dl.definition-default
+										dt Председатель Совета Директоров
+										dd
+											p Богуславский Станислав Иосифович
+								li
+									dl.definition-default
+										dt Члены совета директоров
+										dd
+											p Давыдик Виктор Юльянович
+											p Давыдик Владимир Юльянович
+											p Hanna-Leena Loikkanen<br/>(Ханна-Леена Лойкканен)
+											p Tuinstra Ferdinand Willem<br/>(Туинстра Фердинанд Виллем)
+						.founder-group
+							h3 Правление банка
+							ul
+								li
+									dl.definition-default
+										dt Исполняющий обязанности Председателя Правления
+										dd
+											p Давыдик Виктор Юльянович
+								li
+									dl.definition-default
+										dt Члены совета директоров
+										dd
+											p Люшин Андрей Михайлович
+											p Вознесенский Павел Андреевич
+											p Шибанова Наталия Вячеславовна
+											p Синицын Александр Владимирович
+											p Портнягина Елена Валентиновна
+											p Григорьева Ирина Юрьевна
+								li
+									dl.definition-default
+										dt Главный бухгалтер
+										dd
+											p Ковальчук Ольга Александровна
+
+
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.list-group
+						li.list-group-item
+							a(href='') Новости
+						li.list-group-item
+							a(href='') Банк в СМИ
+						li.list-group-item
+							a(href='') Контакты для СМИ
+						li.list-group-item
+							a(href='') История банка
+						li.list-group-item.active
+							a(href='') Учредители
+						li.list-group-item
+							a(href='') Реквизиты
+						li.list-group-item
+							a(href='') Рейтинги
+						li.list-group-item
+							a(href='') Раскрытие информации
+						li.list-group-item
+							a(href='') Надёжность банка
+						li.list-group-item
+							a(href='') Документы и материалы для скачивания
+					.list-group_shadow
+						span

@@ -1,0 +1,23 @@
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+.header {
+	.logo {
+		a {
+			background-image: url(../images/logo.png);
+		}
+	}
+}
+@media screen and (max-width: @screen-sm-min) {
+	.header {
+		.logo {
+			a {
+				background-image: url(../images/logo-small.png);
+			}
+		}
+	}
+}
+
+.caret {
+	border-top:4px solid #000;
+}

@@ -1,0 +1,84 @@
+//- index.jade
+extends ./templates/layout.jade
+block page-title
+	title Отделения и банкоматы в Москве
+
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-12.col-md-12
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li.active Отделения и банкоматы
+
+					.title-panel
+						h1 Отделения и банкоматы в 
+						.dropdown
+							button.btn.btn-default.dropdown-toggle#dropdownCity3(type="button", data-toggle="dropdown", aria-expanded="true") Санкт-Петербург
+							ul.dropdown-menu(role="menu", aria-labelledby="dropdownCity3")
+								li(role="presentation")
+									a(role="menuitem", tabindex="-1", href="#") Санкт-Петербург
+								li(role="presentation")
+									a(role="menuitem", tabindex="-1", href="#") Москва
+					.tabs-offices-holder
+						ul.nav.tabs-offices
+							li.active
+								a(href="#offices" data-toggle="tab") Отделения
+							li
+								a(href="#atms" data-toggle="tab") Банкоматы
+						.container
+							.row
+								.tab-content
+									.tab-pane.active(id="offices")
+										form(action="#")
+											.check-holder
+												input.checkbox#lbl01(type="checkbox")
+												label(for="lbl01")
+													|Работают
+													|в выходные
+											.check-holder
+												input.checkbox#lbl02(type="checkbox")
+												label(for="lbl02")
+													|Обслуживание
+													|частных лиц
+											.check-holder
+												input.checkbox#lbl03(type="checkbox")
+												label(for="lbl03")
+													|Офисы
+													br
+													|Private Banking
+											.check-holder
+												input.checkbox#lbl04(type="checkbox")
+												label(for="lbl04")
+													|Обслуживание
+													|юридических лиц
+									.tab-pane(id="atms")
+										form(action="#")
+											.check-holder
+												input.checkbox#lbl05(type="checkbox")
+												label(for="lbl05")
+													|Работает
+													|в выходные
+											.check-holder
+												input.checkbox#lbl06(type="checkbox")
+												label(for="lbl06")
+													|Работает
+													|круглосуточно
+											.check-holder
+												input.checkbox#lbl07(type="checkbox")
+												label(for="lbl07")
+													|Принимает
+													br
+													|наличные
+											.check-holder
+												input.checkbox#lbl08(type="checkbox")
+												label(for="lbl08")
+													|Работает
+													br
+													|с валютой
+					form.search-docs
+						input.input-text(type="text" placeholder="Поиск по улице, метро или остановке")
+						input.submit-button.icon-search(type="submit" value="найти")
+					#map(style="width: 100%; height: 480px")

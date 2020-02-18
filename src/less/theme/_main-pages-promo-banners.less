@@ -1,0 +1,121 @@
+.promo-banners-holder{
+	margin-bottom:0 !important;
+	.col-md-4{
+		margin-bottom:20px;
+	}
+	.promo-banner{
+		display:block;
+		vertical-align:middle;
+		height:160px;
+		width:100%;
+		text-decoration:none;
+		background:#ececec;
+		padding:28px;
+		span,
+		em,
+		strong{display:block;}
+		.banner-content{
+			text-align:right;
+			width:242px;
+			height:104px;
+			position:relative;
+			margin:0 auto;
+			color:#686868;
+			.valign-box{
+				width:140px;
+				position:absolute;
+				bottom:2px;
+				right:0;
+				em{
+					font-size:36px;
+					line-height:30px;
+					font-style:normal;
+					padding:5px 0 0;
+				}
+				span{
+					font:19px/19px "helveticaneuecyrlight",Helvetica,Arial,sans-serif;
+				}
+			}
+			.picture{
+				position:absolute;
+				left:-10px;
+				bottom:0;
+			}
+		}
+		&.banner-01,
+		&.banner-02 { 
+			color:#fff;
+			span,
+			em{color:#fff;}
+		}
+		&.banner-01 {
+			background:#00aeef;
+		}
+		&.banner-02 {
+			background:#f58025;
+		}
+		&.banner-03 {
+			em{color:#00aeef;}
+		}
+		&.banner-04 {
+			em{color:#f58025;}
+		}
+		&.banner-05 {
+			em{color:#00aeef;}
+		}
+	}
+	.exchange-rates{
+		border:1px solid #dedede;
+		height:160px;
+		padding:25px 0;
+		.title{
+			color:#686868;
+			border-bottom:1px solid #dedede;
+			padding:0 0 10px;
+			margin:0 auto 30px;
+			display:block;
+			width:240px;
+		}
+		.exchange-list{
+			list-style:none;			width:240px;
+			margin:0 auto;			padding:0;
+			&:after {
+				content:"";				display:block;				clear:both;
+			}
+			li{
+				float:left;
+				width:100%;
+				padding:15px 0 0;
+				&:first-child {padding:0;}
+			}
+			.name{
+				float:left;
+				width:80px;
+				color:#00aeef;
+			}
+			.cost-holder{
+				height:1%;				overflow:hidden;
+				color:#000;
+				font:17px/17px @font-family-helvetica_roman;
+				.alignleft{float:left;}
+				.alignright{float:right;}
+				.cost{
+					position:relative;
+					padding:0 10px 0 0;
+					min-width:60px;
+					position:relative;
+					&:before {
+						background: url(../images/exchange-arrow.png) no-repeat;
+						content:"";
+						position:absolute;
+						right:0;
+						top:4px;
+						width:7px;
+						height:11px;
+					}
+					&.down:before {background-position:0 -12px;}
+				}
+			}
+		}
+	}
+}

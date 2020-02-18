@@ -1,0 +1,52 @@
+.carousel{
+	position:relative;
+	padding:0 0 8px;
+	.item {
+		background-image: -ms-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #DEDFE0 100%);
+	background-image: -moz-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #DEDFE0 100%);
+	background-image: -o-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #DEDFE0 100%);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #FFFFFF), color-stop(1, #DEDFE0));
+	background-image: -webkit-radial-gradient(center, circle closest-corner, #FFFFFF 0%, #DEDFE0 100%);
+	background-image: radial-gradient(circle closest-corner at center, #FFFFFF 0%, #DEDFE0 100%);
+		a{
+			display:block;
+			text-align:center;
+			img{
+				margin:0 auto;
+			}
+		}
+	}
+	.carousel-indicators{
+		position:absolute;
+		bottom:28px;
+		left:0;
+		text-align:center;
+		width:100%;
+		z-index:200;
+		list-style:none;
+		margin:0;
+		padding:0;
+		font-size:0;
+		line-height:0;
+		letter-spacing:-1px;
+		li{
+			width:13px;
+			height:13px;
+			background:#f7f7f7;
+			border:3px solid #bdbdbd;
+			cursor:pointer;
+			text-indent:-9999px;
+			overflow:hidden;
+			text-align:left;
+			border-radius:0px;
+			vertical-align:middle;
+			letter-spacing:0;
+			margin:0 6px;
+			&:hover,
+			&.active{
+				background:#00aeef;
+				border-color:#00aeef;
+			}
+		}
+	}
+}

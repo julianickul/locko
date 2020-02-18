@@ -1,0 +1,38 @@
+@aero: -45px, -90px, 62px, 14px;
+@appstore: -2px, -2px, 116px, 40px;
+@arr_down: -111px, -90px, 22px, 14px;
+@arr_up: -137px, -90px, 22px, 13px;
+@fb: -122px, -2px, 39px, 39px;
+@googleplay: -2px, -46px, 116px, 40px;
+@private_room: -2px, -133px, 28px, 28px;
+@search: -34px, -133px, 28px, 28px;
+@vk: -122px, -45px, 39px, 39px;
+@youtube: -2px, -90px, 39px, 39px;
+
+.sprite-width(@sprite) {
+  width: extract(@sprite, 3);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 4);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 1);
+  @sprite-offset-y: extract(@sprite, 2);
+  background-position: @sprite-offset-x  @sprite-offset-y;
+}
+
+.sprite(@sprite) {
+  .sprite-position(@sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+.url_sprite_icons {
+  background-image: url('../sprite_icons.png');
+}
+

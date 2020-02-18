@@ -1,0 +1,129 @@
+.title-panel{
+	margin:0 0 23px;
+	&:after{
+		content:"";		display:block;		clear:both;
+	}
+	h1{
+		float:left;
+		margin:0;
+	}
+	.dropdown{
+		float:left;
+		margin:0 0 0 10px;
+		button{
+			padding:0;
+			font-size:35px;
+			line-height:35px;
+			color:#0054a6;
+			border:dashed #0054a6;
+			border-width:0 0 1px;
+			background:#fff;
+			&.dropdown-toggle{
+				background:#fff;
+				color:#0054a6;
+			}
+		}
+		.dropdown-menu{
+			width:100%;
+		}
+	}
+}
+.tabs-offices-holder{
+	.tabs-offices{
+		width:100%;
+		overflow:hidden;
+		margin:0 0 20px;
+		font:14px/31px @font-family-helvetica_light;
+		li{
+			float:left;
+			margin:0 0 0 1px;
+			&:first-child {
+				margin:0;
+			}
+			a{
+				float:left;
+				padding:0 10px;
+				background:#e8e8e8;
+				color:#000;
+				text-decoration:none;
+			}
+			&:hover a,
+			&.active a{
+				background:#00aae7;
+				color:#fff;
+			}
+		}
+	}
+	.tab-content{
+		border:1px solid #dedede;
+		float:left;
+		padding:20px;
+		position:relative;
+		z-index:2;
+		&:before,
+		&:after{
+			content: ''; 
+			position: absolute;
+		}
+		&:before{
+			border: 15px solid transparent;
+			border-bottom: 15px solid #dedede;
+			left: 20px; 
+			top:-30px;
+		}
+		&:after{
+			border: 13px solid transparent;
+			border-bottom: 14px solid #fff;
+			top:-27px;
+			left:22px;
+		}
+		.check-holder{
+			float:left;
+			width:160px;
+			margin:0 0 0 14px;
+			&:first-child{margin:0;}
+			left:17px;
+			top:-26px;
+		}
+	}
+}
+.checkbox {
+	vertical-align: top;
+	margin: 0 3px 0 0;
+	width: 19px;
+	height: 19px;
+}
+.checkbox + label {
+	cursor: pointer;
+	font:15px/17px @font-family-helvetica_roman;
+}
+.checkbox:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+.checkbox:not(checked) + label {
+	position: relative;
+	padding: 0 0 0 29px;
+}
+.checkbox:not(checked) + label:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	background: #fff;
+	border:1px solid #dedede;
+}
+.checkbox:not(checked) + label:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: -9999px;
+	width: 9px;
+	height: 9px;
+	background: #00aae7;
+}
+.checkbox:checked + label:after {
+	left: 4px;
+}

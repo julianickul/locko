@@ -1,0 +1,144 @@
+//- index.jade
+extends ./templates/layout.jade
+block page-title
+	title О банке - Рейтинги
+
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-8
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О банке
+						li.active Рейтинги
+
+					article
+						h1 Рейтинги
+						p Локобанк занимает 13-е место по размеру активов по результатам 3-го квартала 2014 года («Интерфакс-ЦЭА»). Согласно данным «Интерфакс-ЦЭА», по результатам 3-го квартала 2014 года Локобанк находится на 6-м месте в России по объему средств частных лиц и на 9-м месте — по объему кредитов для частных лиц.
+
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.list-group
+						li.list-group-item
+							a(href='') Новости
+						li.list-group-item
+							a(href='') Банк в СМИ
+						li.list-group-item
+							a(href='') Контакты для СМИ
+						li.list-group-item
+							a(href='') История банка
+						li.list-group-item
+							a(href='') Учредители
+						li.list-group-item
+							a(href='') Реквизиты
+						li.list-group-item.active
+							a(href='') Рейтинги
+						li.list-group-item
+							a(href='') Раскрытие информации
+						li.list-group-item
+							a(href='') Надёжность банка
+						li.list-group-item
+							a(href='') Документы и материалы для скачивания
+					.list-group_shadow
+						span
+
+			.panel-group#accordion(aria-multiselectable="true")
+				.panel.panel-default
+					.panel-heading#heading1(role='tab')
+						h4.panel-title
+							a.accordion-toggle(data-toggle="collapse",data-parent="#accordion", href="#collapse1", aria-expanded="true", aria-controls="collapse1")
+								span.icon-arrow
+								|Локо-банк в рейтинге Moody’s Investors Service
+					.panel-collapse.collapse.in#collapse1(role="tabpanel", aria-labelledby="collapse1")
+						.panel-body
+							p Кредитный рейтинг, подготовленный международным рейтинговым агентством Moody's Investors Service
+							br
+							p Долгосрочный рейтинг — <strong>«B2»</strong>
+							p Краткосрочный рейтинг — <strong>«NP»</strong>
+							p Рейтинг финансовой устойчивости — <strong>«Е+»</strong>
+							p Прогноз по изменению рейтинга — <strong>«Cтабильный»</strong>
+							p Долгосрочный рейтинг по национальной шкале — <strong>«A3.ru»</strong>
+
+							a.btn.btn-default.btn-sm(href='#') Рассказать друзьям
+
+				.panel.panel-default
+					.panel-heading#heading2(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse2", aria-expanded="false", aria-controls="collapse2")
+								span.icon-arrow
+								|Локо-банк в рейтинге Fitch Ratings
+					.panel-collapse.collapse#collapse2(role="tabpanel", aria-labelledby="collapse2")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading3(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse3", aria-expanded="false", aria-controls="collapse3")
+								span.icon-arrow
+								|6 место рэнкинга по объемам выданных кредитов МСБ за 2013
+					.panel-collapse.collapse#collapse3(role="tabpanel", aria-labelledby="collapse3")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading4(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse4", aria-expanded="false", aria-controls="collapse4")
+								span.icon-arrow
+								|9 место в топ-20 банков по величине портфеля микрокредитов, выданных МСБ
+					.panel-collapse.collapse#collapse4(role="tabpanel", aria-labelledby="collapse4")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading5(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse5", aria-expanded="false", aria-controls="collapse5")
+								span.icon-arrow
+								|19 место в топ-20 банков по величине кредитного портфеля фл, выданного для бизнес-целей, по итогам 2013 года
+					.panel-collapse.collapse#collapse5(role="tabpanel", aria-labelledby="collapse5")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading6(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse6", aria-expanded="false", aria-controls="collapse6")
+								span.icon-arrow
+								|28 место в топ-30 банков по портфелю кредитов ип за 2013 год
+					.panel-collapse.collapse#collapse6(role="tabpanel", aria-labelledby="collapse6")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading7(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse7", aria-expanded="false", aria-controls="collapse7")
+								span.icon-arrow
+								|13 место в рейтинге самых надежных банков
+					.panel-collapse.collapse#collapse7(role="tabpanel", aria-labelledby="collapse7")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading8(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse8", aria-expanded="false", aria-controls="collapse8")
+								span.icon-arrow
+								| 14 место в топ-20 банков по объему автокредитов, предоставленных в 2013 году
+					.panel-collapse.collapse#collapse8(role="tabpanel", aria-labelledby="collapse8")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading9(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse9", aria-expanded="false", aria-controls="collapse9")
+								span.icon-arrow
+								|15 место в топ-20 банков по объему портфеля автокредитов на 01.01.14
+					.panel-collapse.collapse#collapse9(role="tabpanel", aria-labelledby="collapse9")
+						.panel-body
+							p Some text goes here

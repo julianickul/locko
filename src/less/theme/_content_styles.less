@@ -1,0 +1,199 @@
+// Common Styles
+dl.definition-default {
+	margin: 0 0 10px;
+	padding: 0;
+	dt {
+		font-size: 15px;
+		color: #8d8d8d;
+		font-weight: normal;
+		margin: 0;
+		padding: 0;
+	}
+	dd {
+		margin: 0;
+		padding: 0;
+		font-size: 17px;
+		color: #000;
+	}
+}
+
+.send-cv {
+	position: relative;
+	text-align: center;
+	color:#fff;
+	background: url(../images/bg_cv.jpg) no-repeat 50% 0;
+	min-height: 270px;
+	padding-top: 60px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin:0 0 50px;
+	h2 {
+		font-size:35px;
+		margin: 0 0 40px;
+	}
+	@media (max-width: 420px) {
+		min-height: 300px;
+		padding-top: 30px;
+	}
+}
+
+
+.account-details {
+	dl {
+		margin: 0 0 5px;
+	}
+	dt {
+		clear:both;
+		width: 215px;
+		float: left;
+		@media (max-width: @screen-xs-min) {
+			float: none;
+		}
+	}
+	dd {
+		overflow: hidden;
+		font-weight: bold;
+	}
+}
+
+.founder-group {
+	h3 {
+		font-size: 22px;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 30px;
+		li {
+			background: #f6f5f5;
+			padding: 15px;
+			margin: 0 0 2px;
+		}
+	}
+	dl.definition-default {
+		margin: 10px 0 0;
+		&:first-child {
+			margin: 0;
+		}
+		p {
+			margin: 20px 0 0;
+			&:first-child {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.sidebar-promo {
+	margin-top: 45px; //super fix for dumb fucks - clients
+	img {
+		width: 100%;
+	}
+}
+
+.search-docs{
+	border:1px solid #dedede;
+	margin:0 0 15px;
+	height:38px;
+	padding:0 55px 0 10px;
+	position:relative;
+	.input-text{
+		margin:0;
+		padding:9px 0 7px;
+		background:none;
+		border:0;
+		display:block;
+		width:100%;
+	}
+	.submit-button{
+		position:absolute;
+		right:21px;
+		top:9px;
+		width:20px;
+		height:20px;
+		background:none;
+		border:0;
+		padding:0;
+		margin:0;
+		font-size:0;
+		line-height:0;
+		text-indent:-9999px;
+		overflow:hidden;
+		background: url(../images/ico-search.png) no-repeat;
+		cursor:pointer;
+	}
+}
+
+.filters {
+	margin: 0 0 30px;
+	.filters-title {
+		font-size: 16px;
+		color:#666;
+		margin: 0 0 10px;
+	}
+	.btn-group {
+		display: block;
+		margin: 0 0 9px;
+		.clearfix();
+		.btn {
+			margin:0 0 1px 1px;
+		}
+	}
+}
+
+.list-documents {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		position: relative;
+		padding:10px 0 10px 40px;
+	}
+	.document-title {
+		font-size: 18px;
+	}
+	.document-date {
+		font-size: 15px;
+		color:#000;
+	}
+	.icon-doc,
+	.icon-pdf {
+		position: absolute;
+		left: 0;
+		top:13px;
+	}
+}
+
+.sidebar-block {
+	margin-bottom: 30px;
+	.sidebar-title {
+		h2 {
+			margin: 0;
+		}
+	}
+}
+.share-info {
+	margin-bottom: 20px;
+	span {
+		margin-right: 20px;
+	}
+}
+
+.load-more {
+	border-top:1px solid #f4f4f4;
+	padding: 30px 0;
+	a {
+		color:#00c0ff;
+		font:16px @font-family-helvetica_bold;
+		text-decoration: none;
+	}
+	span {
+		display:inline-block;
+		vertical-align: middle;
+	}
+	.icon-reload {
+		margin-left: 7px;
+	}
+}

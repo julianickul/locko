@@ -1,0 +1,93 @@
+//- news.jade
+extends ./templates/layout.jade
+block page-title
+	title Новости
+
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-8
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li.active Новости
+
+					article
+						h1 Новости
+
+
+						.filters
+							.btn-group(role="group")
+								a.btn.btn-gray.btn-xs.active все новости
+								a.btn.btn-gray.btn-xs федеральные новости
+								a.btn.btn-gray.btn-xs региональные новости
+							.btn-group(role="group")
+								a.btn.btn-gray.btn-xs.active 2014
+								a.btn.btn-gray.btn-xs 2013
+								a.btn.btn-gray.btn-xs 2012
+								a.btn.btn-gray.btn-xs 2011
+								a.btn.btn-gray.btn-xs 2010
+								a.btn.btn-gray.btn-xs 2009
+								a.btn.btn-gray.btn-xs 2008
+								a.btn.btn-gray.btn-xs 2007
+								a.btn.btn-gray.btn-xs 2006
+								a.btn.btn-gray.btn-xs 2005
+
+
+						ul.list-news
+							li.list-news_item
+								.news-date 17 декабря 2014
+								.news-title
+									a(href='') Агентство по страхованию вкладов аккредитовало  Локо-Банк!
+								.news-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis.
+							li.list-news_item
+								.news-date 16 декабря 2014
+								.news-title
+									a(href='') Локо-Банк стал лидером августа по приросту депозитов среди банков ТОП-100 по объему ...
+								.news-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis.
+							li.list-news_item
+								.news-date 15 декабря 2014
+								.news-title
+									a(href='') Ирина Григорьева вошла в состав Правления Локо-Банка
+								.news-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis.
+							li.list-news_item
+								.news-date 15 декабря 2014
+								.news-title
+									a(href='') Локо-Банк стал лидером августа по приросту депозитов среди банков ТОП-100 по объему...
+								.news-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis.
+
+						.load-more
+							a(href="")
+								span Загрузить еще
+								span.icon-reload
+
+
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.list-group
+						li.list-group-item.active
+							a(href='') Новости
+						li.list-group-item
+							a(href='') Банк в СМИ
+						li.list-group-item
+							a(href='') Контакты для СМИ
+						li.list-group-item
+							a(href='') История банка
+						li.list-group-item
+							a(href='') Учредители
+						li.list-group-item
+							a(href='') Реквизиты
+						li.list-group-item
+							a(href='') Рейтинги
+						li.list-group-item
+							a(href='') Раскрытие информации
+						li.list-group-item
+							a(href='') Надёжность банка
+						li.list-group-item
+							a(href='') Документы и материалы для скачивания
+					.list-group_shadow
+						span
+
+					.sidebar-block.sidebar-promo
+						a(href='')
+							img.img-responsive(src='./images/temp/sidebar_promo1.png', alt='До 12% годовых')

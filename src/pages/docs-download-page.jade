@@ -1,0 +1,156 @@
+//- about_open_info.jade
+extends ./templates/layout.jade
+block page-title
+	title Документы и материалы для скачивания
+
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-8
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О банке
+						li.active Документы и материалы для скачивания
+
+					article
+						h1 Документы и материалы для скачивания
+						p Локо-Банк &ndash; это коммерческий банк, основанный в 1994 году. В состав акционеров Банка входят финансовые институты: Международная финансовая корпорация (IFC) и шведский инвестиционный фонд East Capitalи шведский инвестиционный фонд East Capitalи шведский инвестиционный фонд East Capital. это коммерческий банк, основанный в 1994 году. В состав акционеров Банка входят финансовые институты: Меж(IFC) и шведский инвестиционный фонддународная финансовая корпорация (IFC) и шведский инвестиционный фонд East Capital. (IFC) и шведский инвестиционный  
+						
+						.filters
+							.btn-group(role="group")
+								a.btn.btn-gray.btn-xs.active все документы
+								a.btn.btn-gray.btn-xs для частных лиц
+								a.btn.btn-gray.btn-xs малому и среднему бизнесу
+								a.btn.btn-gray.btn-xs корпоративным клиентам
+								a.btn.btn-gray.btn-xs о банке
+								a.btn.btn-gray.btn-xs пресс-центр
+						form.search-docs
+							input.input-text(type="text" placeholder="введите название документа или продукта")
+							input.submit-button.icon-search(type="submit" value="найти")
+						
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.list-group
+						li.list-group-item
+							a(href='') Новости
+						li.list-group-item
+							a(href='') Банк в СМИ
+						li.list-group-item
+							a(href='') Контакты для СМИ
+						li.list-group-item
+							a(href='') История банка
+						li.list-group-item
+							a(href='') Учредители
+						li.list-group-item
+							a(href='') Реквизиты
+						li.list-group-item
+							a(href='') Рейтинги
+						li.list-group-item
+							a(href='') Раскрытие информации
+						li.list-group-item
+							a(href='') Надёжность банка
+						li.list-group-item.active
+							a(href='') Документы и материалы для скачивания
+					.list-group_shadow
+						span
+			.panel-group#accordion(aria-multiselectable="true")
+				.panel.panel-default
+					.panel-heading#heading1(role='tab')
+						h4.panel-title
+							a.accordion-toggle(data-toggle="collapse",data-parent="#accordion", href="#collapse1", aria-expanded="true", aria-controls="collapse1")
+								span.icon-arrow
+								| Кредиты
+					.panel-collapse.collapse.in#collapse1(role="tabpanel", aria-labelledby="collapse1")
+						.panel-body
+							.filters
+								.btn-group(role="group")
+									a.btn.btn-gray.btn-xs.active кредиты наличными
+									a.btn.btn-gray.btn-xs автокредиты
+									a.btn.btn-gray.btn-xs ипотека
+							ul.list-documents
+								li
+									span.icon-doc
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									//img.ico-doc(src='images/doc.svg', width='28', height='35')
+									.document-title
+										a(href='') Сообщение о существенном факте «Об отдельных решениях, принятых Советом Директоров»
+									span.document-date 22 ноября 2014 г.
+								li
+									span.icon-doc
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									.document-title
+										a(href='') Сообщение о существенном факте «Об отдельных решениях
+									span.document-date 22 ноября 2014 г.
+								li
+									span.icon-doc
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									.document-title
+										a(href='') Сообщение о существенном факте «Об отдельных решениях, принятых Советом
+									span.document-date 22 ноября 2014 г.
+								li
+									span.icon-doc
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									.document-title
+										a(href='') Сообщение о существенном факте «Об отдельных решениях
+									span.document-date 22 ноября 2014 г.
+				.panel.panel-default
+					.panel-heading#heading3(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse3", aria-expanded="false", aria-controls="collapse3")
+								span.icon-arrow
+								|Вклады
+					.panel-collapse.collapse#collapse3(role="tabpanel", aria-labelledby="collapse3")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading4(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse4", aria-expanded="false", aria-controls="collapse4")
+								span.icon-arrow
+								| Банковские карты
+					.panel-collapse.collapse#collapse4(role="tabpanel", aria-labelledby="collapse4")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading6(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse6", aria-expanded="false", aria-controls="collapse6")
+								span.icon-arrow
+								|Private Banking
+					.panel-collapse.collapse#collapse6(role="tabpanel", aria-labelledby="collapse6")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading7(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse7", aria-expanded="false", aria-controls="collapse7")
+								span.icon-arrow
+								|Прочие документы
+					.panel-collapse.collapse#collapse7(role="tabpanel", aria-labelledby="collapse7")
+						.panel-body
+							p Some text goes here

@@ -1,0 +1,70 @@
+//
+// Common Styles
+// ------------------------------------------------------
+* {
+	outline:0 !important;
+}
+body {
+	font: 16px/1.25 @font-family-helvetica_light;
+}
+a {
+	outline:0 !important;
+	color:#0053a9;
+	text-decoration: underline;
+	&:hover {
+		color:#fbad3a;
+	}
+}
+img.img-responsive {
+	width: 100%;
+}
+
+@font-face {
+	font-family: 'helveticaneuecyrbold';
+	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+	src: url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+	url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+	url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'helveticaneuecyrlight';
+	src: url('../fonts/HelveticaNeueCyr-Light.eot');
+	src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+	url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+	url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+/*@font-face {
+	font-family:'helveticaneuecyrroman';
+	src: url('../fonts/HelveticaNeueCyr-Roman_gdi.eot');
+	src: url('../fonts/HelveticaNeueCyr-Roman_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaNeueCyr-Roman_gdi.woff') format('woff'),
+	url('../fonts/HelveticaNeueCyr-Roman_gdi.ttf') format('truetype'),
+	url('../fonts/HelveticaNeueCyr-Roman_gdi.svg#HelveticaNeueCyr-Roman') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2265;
+}*/
+
+@font-family-helvetica_bold:'helveticaneuecyrbold', Arial, Helvetica, sans-serif;
+@font-family-helvetica_light:'helveticaneuecyrlight', Arial, Helvetica, sans-serif;
+@font-family-helvetica_roman:'helveticaneuecyrroman', Arial, Helvetica, sans-serif;
+
+.wrapper {
+	min-width: 320px;
+}
+strong {
+	font-weight: normal;
+	font-family: @font-family-helvetica_bold;
+}
+article p {
+	margin-bottom: 20px;
+}

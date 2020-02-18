@@ -1,0 +1,109 @@
+.modal{
+	.close{
+		position:absolute;
+		left:100%;
+		top:0;
+		background:none;
+		padding:0;
+		margin:0;
+		border:0;
+		color:#fff;
+		font-size:52px;
+		line-height:19px;
+		width:27px;
+		height:19px;
+		overflow:hidden;
+	}
+}
+.send-popup{
+	.modal-dialog{
+		width:500px;
+		.modal-content{
+			border-radius:0;
+			.modal-header{
+				padding:21px 0;
+				h4{
+					font:30px/34px @font-family-helvetica_light;
+					text-align:center;
+				}
+			}
+			.send-social{
+				width:50%;
+				float:left;
+				height:226px;
+				color:#fff;
+				text-align:center;
+				text-decoration:none;
+				.ico-holder{
+					display:block;
+					margin:0 auto;
+					position:relative;
+					overflow:hidden;
+				}
+				&.vk {
+					background:#5084b3;
+					padding:60px 0 0;
+					.ico-holder {
+						width:82px;
+						height:46px;
+						margin-bottom:40px;
+					}
+					.icon-vk{
+						color:#5084b3;
+						background:#fff;
+						font-size:46px;
+						border:1px solid #5084b3;
+						font-size: 105px;
+						left: -13px;
+						position: absolute;
+						top: -32px;
+					}
+				}
+				&.fb {
+					background:#325aa5;
+					padding:50px 0 0;
+					.ico-holder {
+						width:60px;
+						height:59px;
+						border-radius:4px;
+						margin-bottom:36px;
+					}
+					.icon-facebook{
+						color:#fff;
+						background:#325aa5;
+						font-size:46px;
+						border:1px solid #5084b3;
+						font-size: 105px;
+						left: -13px;
+						position: absolute;
+						top: -19px;
+					}
+				}
+				.send-number{
+					width:170px;
+					height:50px;
+					line-height:50px;
+					display:block;
+					margin:0 auto;
+					text-align:center;
+					span{
+						display:inline-block;
+						background: url(../images/ico-user.png) no-repeat 0 13px;
+						padding:0 0 0 33px;
+						font:18px/50px @font-family-helvetica_light;
+					}
+				}
+				&.vk {
+					.send-number{
+						background:#3c73a4;
+					}
+				}
+				&.fb {
+					.send-number{
+						background:#294e92;
+					}
+				}
+			}
+		}
+	}
+}

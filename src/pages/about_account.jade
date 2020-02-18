@@ -1,0 +1,224 @@
+//- index.jade
+extends ./templates/layout.jade
+block page-title
+	title О банке - Реквизиты
+
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-8
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О банке
+						li.active Реквизиты
+
+					article
+						h1 Реквизиты
+						.account-details
+							dl.definition-default
+								dt Юридический адрес:
+								dd Россия, 111250 г. Москва, Госпитальная ул., дом 14
+							dl.definition-default
+								dt Тел./факс:
+								dd +7 495 739-5555,<br/>+7 800 250-50-50
+							dl.definition-default
+								dt E-mail:
+								dd info@lockobank.ru
+							dl.definition-default
+								dt Телекс:
+								dd 611628 LOKO RU
+							dl.definition-default
+								dt SWIFT:
+								dd CLOKRUMM
+							dl.definition-default
+								dt Reuter:
+								dd LOKO
+							dl.definition-default
+								dt Репозитарный код:
+								dd RP0065400001
+							dl.definition-default
+								dt БИК:
+								dd 044585161
+							dl.definition-default
+								dt ИНН:
+								dd 7750003943
+							dl.definition-default
+								dt КПП:
+								dd 775001001
+
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.list-group
+						li.list-group-item
+							a(href='') Новости
+						li.list-group-item
+							a(href='') Банк в СМИ
+						li.list-group-item
+							a(href='') Контакты для СМИ
+						li.list-group-item
+							a(href='') История банка
+						li.list-group-item
+							a(href='') Учредители
+						li.list-group-item.active
+							a(href='') Реквизиты
+						li.list-group-item
+							a(href='') Рейтинги
+						li.list-group-item
+							a(href='') Раскрытие информации
+						li.list-group-item
+							a(href='') Надёжность банка
+						li.list-group-item
+							a(href='') Документы и материалы для скачивания
+					.list-group_shadow
+						span
+
+			.panel-group#accordion(aria-multiselectable="true")
+				.panel.panel-default
+					.panel-heading#heading1(role='tab')
+						h4.panel-title
+							a.accordion-toggle(data-toggle="collapse",data-parent="#accordion", href="#collapse1", aria-expanded="true", aria-controls="collapse1")
+								span.icon-arrow
+								|Фирменное наименование банка
+					.panel-collapse.collapse.in#collapse1(role="tabpanel", aria-labelledby="collapse1")
+						.panel-body
+							dl.definition-default
+								dt Полное фирменное наименование Банка на русском языке:
+								dd Коммерческий Банк «ЛОКО-Банк» (закрытое акционерное общество)
+							dl.definition-default
+								dt Краткое фирменное наименование Банка на русском языке:
+								dd КБ «ЛОКО-Банк» (ЗАО)
+							dl.definition-default
+								dt Полное фирменное наименование Банка на английском языке:
+								dd Closed joint stock company "LOCKO-Bank"
+							dl.definition-default
+								dt Краткое фирменное наименование Банка на английском языке:
+								dd "LOCKO-Bank"<br/>ОГРН: 1057711014195
+
+				.panel.panel-default
+					.panel-heading#heading2(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse2", aria-expanded="false", aria-controls="collapse2")
+								span.icon-arrow
+								|Корреспондентский счет в рублях РФ
+					.panel-collapse.collapse#collapse2(role="tabpanel", aria-labelledby="collapse2")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading3(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse3", aria-expanded="false", aria-controls="collapse3")
+								span.icon-arrow
+								|Корреспондентский счет в долларах USD
+					.panel-collapse.collapse#collapse3(role="tabpanel", aria-labelledby="collapse3")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading4(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse4", aria-expanded="false", aria-controls="collapse4")
+								span.icon-arrow
+								|Корреспондентский счет в европейской валюте EUR
+					.panel-collapse.collapse#collapse4(role="tabpanel", aria-labelledby="collapse4")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading5(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse5", aria-expanded="false", aria-controls="collapse5")
+								span.icon-arrow
+								|Корреспондентский счет в английских фунтах GBP
+					.panel-collapse.collapse#collapse5(role="tabpanel", aria-labelledby="collapse5")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading11(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse11", aria-expanded="false", aria-controls="collapse11")
+								span.icon-arrow
+								|Корреспондентский счет в швейцарских франках CHF
+					.panel-collapse.collapse#collapse11(role="tabpanel", aria-labelledby="collapse11")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading6(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse6", aria-expanded="false", aria-controls="collapse6")
+								span.icon-arrow
+								|Корреспондентский счет в польских золотых PLN
+					.panel-collapse.collapse#collapse6(role="tabpanel", aria-labelledby="collapse6")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading7(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse7", aria-expanded="false", aria-controls="collapse7")
+								span.icon-arrow
+								|Корреспондентский счет в казахских танге KZT
+					.panel-collapse.collapse#collapse7(role="tabpanel", aria-labelledby="collapse7")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading9(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse9", aria-expanded="false", aria-controls="collapse9")
+								span.icon-arrow
+								|Корреспондентский счет в белорусских рублях BYR
+					.panel-collapse.collapse#collapse9(role="tabpanel", aria-labelledby="collapse9")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading10(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse10", aria-expanded="false", aria-controls="collapse10")
+								span.icon-arrow
+								|Корреспондентский счет в украинских гривнах UAH
+					.panel-collapse.collapse#collapse10(role="tabpanel", aria-labelledby="collapse10")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading12(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse12", aria-expanded="false", aria-controls="collapse12")
+								span.icon-arrow
+								|Корреспондентский счет в китайских юанях CNY
+					.panel-collapse.collapse#collapse12(role="tabpanel", aria-labelledby="collapse12")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading13(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse13", aria-expanded="false", aria-controls="collapse13")
+								span.icon-arrow
+								|Территориальные учреждения Банка России, осуществляющие надзор за деятельностью КБ «ЛОКО-Банк» (ЗАО)
+					.panel-collapse.collapse#collapse13(role="tabpanel", aria-labelledby="collapse13")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading14(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse14", aria-expanded="false", aria-controls="collapse14")
+								span.icon-arrow
+								|Генеральная лицензия Банка
+					.panel-collapse.collapse#collapse14(role="tabpanel", aria-labelledby="collapse14")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading15(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse15", aria-expanded="false", aria-controls="collapse15")
+								span.icon-arrow
+								|Реквизиты филиалов
+					.panel-collapse.collapse#collapse15(role="tabpanel", aria-labelledby="collapse15")
+						.panel-body
+							p Some text goes here
+				.panel.panel-default
+					.panel-heading#heading16(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse16", aria-expanded="false", aria-controls="collapse16")
+								span.icon-arrow
+								|Для проверки бенефициарами фактов выдачи банковских гарантий
+					.panel-collapse.collapse#collapse16(role="tabpanel", aria-labelledby="collapse16")
+						.panel-body
+							p Some text goes here

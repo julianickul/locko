@@ -1,0 +1,198 @@
+//- about_open_info.jade
+extends ./templates/layout.jade
+block page-title
+	title О банке - Раскрытие информации
+
+block content
+	.main
+		.container
+			.row
+				.col-xs-12.col-sm-8
+					ol.breadcrumb
+						li
+							a(href="#") Главная
+						li
+							a(href="#") О банке
+						li.active Раскрытие информации
+
+					article
+						h1 Раскрытие информации и финансовая отчетность
+
+						p Lorem ipsum dolor sit amet, te soleat delenit ponderum nec, an putant veritus est, quo at homero partiendo molestiae. Purto laudem quaestio eos no. Ius at altera virtute, sea prompta nostrum indoctum ea. Corpora reformidans id pro, alienum percipitur pri ut.
+						p Assum albucius cotidieque in vim, oratio complectitur an vel. Ex inani deterruisset pri, nam possit suavitate urbanitas te, debitis alienum facilisi nec et. Cu his legendos philosophia, ius oratio viderer et. Sed ei modo civibus persecuti, cu sed reprimique sadipscing. Ne qui dicat partiendo definiebas, pri stet appetere ut, ad est veritus assentior. Summo aliquid accusata ex quo, iudico constituto ne usu.
+
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.list-group
+						li.list-group-item
+							a(href='') Новости
+						li.list-group-item
+							a(href='') Банк в СМИ
+						li.list-group-item
+							a(href='') Контакты для СМИ
+						li.list-group-item
+							a(href='') История банка
+						li.list-group-item
+							a(href='') Учредители
+						li.list-group-item
+							a(href='') Реквизиты
+						li.list-group-item
+							a(href='') Рейтинги
+						li.list-group-item.active
+							a(href='') Раскрытие информации
+						li.list-group-item
+							a(href='') Надёжность банка
+						li.list-group-item
+							a(href='') Документы и материалы для скачивания
+					.list-group_shadow
+						span
+
+
+			.filters
+				.filters-title Выберите год
+				.btn-group(role="group")
+					a.btn.btn-gray.btn-xs 2015
+					a.btn.btn-gray.btn-xs.active 2014
+					a.btn.btn-gray.btn-xs 2013
+					a.btn.btn-gray.btn-xs 2012
+					a.btn.btn-gray.btn-xs 2011
+					a.btn.btn-gray.btn-xs 2010
+					a.btn.btn-gray.btn-xs 2009
+					a.btn.btn-gray.btn-xs 2008
+					a.btn.btn-gray.btn-xs 2007
+					a.btn.btn-gray.btn-xs 2006
+					a.btn.btn-gray.btn-xs 2005
+					a.btn.btn-gray.btn-xs 2004
+					a.btn.btn-gray.btn-xs 2005
+					a.btn.btn-gray.btn-xs 2002
+
+			.panel-group#accordion(aria-multiselectable="true")
+				.panel.panel-default
+					.panel-heading#heading2(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse2", aria-expanded="false", aria-controls="collapse2")
+								span.icon-arrow
+								|Существенные факты
+					.panel-collapse.collapse#collapse2(role="tabpanel", aria-labelledby="collapse2")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading1(role='tab')
+						h4.panel-title
+							a.accordion-toggle(data-toggle="collapse",data-parent="#accordion", href="#collapse1", aria-expanded="true", aria-controls="collapse1")
+								span.icon-arrow
+								|Годовые отчеты
+					.panel-collapse.collapse.in#collapse1(role="tabpanel", aria-labelledby="collapse1")
+						.panel-body
+							.filters
+								.btn-group(role="group")
+									a.btn.btn-gray.btn-xs Декабрь
+									a.btn.btn-gray.btn-xs.active Ноябрь
+									a.btn.btn-gray.btn-xs Октябрь
+									a.btn.btn-gray.btn-xs Сентябрь
+									a.btn.btn-gray.btn-xs Август
+									a.btn.btn-gray.btn-xs Июль
+									a.btn.btn-gray.btn-xs Июнь
+									a.btn.btn-gray.btn-xs Май
+									a.btn.btn-gray.btn-xs Апрель
+									a.btn.btn-gray.btn-xs Март
+									a.btn.btn-gray.btn-xs Февраль
+									a.btn.btn-gray.btn-xs Январь
+
+							ul.list-documents
+								li
+									span.icon-doc
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									//img.ico-doc(src='images/doc.svg', width='28', height='35')
+									.document-title
+										a(href='' target="_blank") Сообщение о существенном факте «Об отдельных решениях, принятых Советом Директоров»
+									span.document-date 22 ноября 2014 г.
+								li
+									span.icon-pdf
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									.document-title
+										a(href='') Сообщение о существенном факте «Об отдельных решениях
+									span.document-date 22 ноября 2014 г.
+								li
+									span.icon-pdf
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									.document-title
+										a(href='' target="_blank") Сообщение о существенном факте «Об отдельных решениях, принятых Советом
+									span.document-date 22 ноября 2014 г.
+								li
+									span.icon-pdf
+										span.path1
+										span.path2
+										span.path3
+										span.path4
+										span.path5
+										span.path6
+									.document-title
+										a(href='' target="_blank") Сообщение о существенном факте «Об отдельных решениях
+									span.document-date 22 ноября 2014 г.
+
+				.panel.panel-default
+					.panel-heading#heading3(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse3", aria-expanded="false", aria-controls="collapse3")
+								span.icon-arrow
+								|Аффилированные лица
+					.panel-collapse.collapse#collapse3(role="tabpanel", aria-labelledby="collapse3")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading4(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse4", aria-expanded="false", aria-controls="collapse4")
+								span.icon-arrow
+								| Список лиц под контролем, либо значительным влиянием которых находится банк
+					.panel-collapse.collapse#collapse4(role="tabpanel", aria-labelledby="collapse4")
+						.panel-body
+							p Some text goes here
+
+				//.panel.panel-default
+					.panel-heading#heading5(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse5", aria-expanded="false", aria-controls="collapse5")
+								span.icon-arrow
+								|19 место в топ-20 банков по величине кредитного портфеля фл, выданного для бизнес-целей, по итогам 2013 года
+					.panel-collapse.collapse#collapse5(role="tabpanel", aria-labelledby="collapse5")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading6(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse6", aria-expanded="false", aria-controls="collapse6")
+								span.icon-arrow
+								|Информация эмитента
+					.panel-collapse.collapse#collapse6(role="tabpanel", aria-labelledby="collapse6")
+						.panel-body
+							p Some text goes here
+
+				.panel.panel-default
+					.panel-heading#heading7(role='tab')
+						h4.panel-title
+							a.accordion-toggle.collapsed(data-toggle="collapse",data-parent="#accordion", href="#collapse7", aria-expanded="false", aria-controls="collapse7")
+								span.icon-arrow
+								|Финансовая отчетность
+					.panel-collapse.collapse#collapse7(role="tabpanel", aria-labelledby="collapse7")
+						.panel-body
+							p Some text goes here
+

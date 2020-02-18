@@ -1,0 +1,104 @@
+//- index.jade
+extends ./templates/layout.jade
+block page-title
+	title Главная
+block content
+	.main 
+		.container
+			.row 
+				.col-xs-12 
+					#main-slider.carousel.slide(data-ride="carousel")
+						ol.carousel-indicators
+							li(data-target="#main-slider" data-slide-to="0" class="active")
+							li(data-target="#main-slider" data-slide-to="1")
+							li(data-target="#main-slider" data-slide-to="2")
+						.carousel-inner
+							.item.active
+								a(href="#")
+									img(src="images/img-slider.png")
+							.item
+								a(href="#")
+									img(src="images/img-slider-02.png")
+							.item
+								a(href="#")
+									img(src="images/img-slider-03.png")
+								
+			.row.promo-banners-holder
+				.col-sm-6.col-md-4
+					a.promo-banner.banner-01(href="#")
+						strong.banner-content
+							img.picture(src="images/ico-banner.png")
+							span.valign-box
+								span Автокредиты 
+								em до 13%
+					
+				.col-sm-6.col-md-4
+					a.promo-banner.banner-02(href="#")
+						strong.banner-content
+							img.picture(src="images/ico-banner-02.png")
+							span.valign-box  
+								span Ипотека 
+								em до 13%
+				.col-sm-6.col-md-4
+					.exchange-rates
+						strong.title Курс валют
+						.exchange-list
+							li
+								strong.name USD
+								.cost-holder
+									span.cost.alignleft 38.95
+									span.cost.alignright 38.95
+							li
+								strong.name EUR
+								.cost-holder
+									span.cost.alignleft.down 38.95
+									span.cost.alignright.down 38.95
+								
+				.col-sm-6.col-md-4 
+					a.promo-banner.banner-03(href="#")
+						strong.banner-content
+							img.picture(src="images/ico-banner-03.png")
+							span.valign-box 
+								span Вклады частным лицам 
+								em до 13%
+				.col-sm-6.col-md-4 
+					a.promo-banner.banner-04(href="#")
+						strong.banner-content
+							img.picture(src="images/ico-banner-04.png")
+							span.valign-box 
+								span Кредиты частным лицам 
+								em до 13%
+				.col-sm-6.col-md-4
+					a.promo-banner.banner-05(href="#")
+						strong.banner-content 
+							img.picture(src="images/ico-banner-05.png")
+							span.valign-box
+								span Банковские карты
+			.row.news-block
+				.col-xs-12.col-sm-8
+					article
+						.wrap.clearfix
+							h1 Новости
+							a.all-news-link(href="#")
+								span 
+								|Все новости
+						ul.list-news
+							li.list-news_item
+								.news-date 17 декабря 2014
+								.news-title
+									a(href='') Локо-Банк в числе лидеров по приросту депозитов физических лицза III квартал 2014 года
+							li.list-news_item
+								.news-date 16 декабря 2014
+								.news-title
+									a(href='') Локо-Банк в Санкт-Петербурге выдал кредит ООО «Авангард», официальному дилеру Мерседес-Бенц
+							li.list-news_item
+								.news-date 15 декабря 2014
+								.news-title
+									a(href='') Локо-Банк удостоен награды от Commerzbank за высокое качество исполнения платежей
+
+
+				.col-xs-12.col-sm-4.sidebar#sidebar
+					.sidebar-block.sidebar-promo
+						a(href='')
+							img.img-responsive(src='./images/temp/sidebar_promo1.png', alt='До 12% годовых')
+			
